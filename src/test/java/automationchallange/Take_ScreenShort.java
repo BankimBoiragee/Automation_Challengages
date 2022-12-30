@@ -9,6 +9,8 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class Take_ScreenShort extends Wait_Practice {
 	
 	public static void takeScreenshotAtEndOfTest() throws IOException {
@@ -23,5 +25,12 @@ public class Take_ScreenShort extends Wait_Practice {
 	File scrFile=((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 	String currentDir=System.getProperty("user,dir");
 	FileUtils.copyFile(scrFile, new File(currentDir +"/screenshorts/" +System.currentTimeMillis()+ ".png"));
+	}*/
+	/*public static void takeScreenShort() throws Throwable {
+		WebDriverManager.chromiumdriver().setup();
+		WebDriver driver= new ChromeDriver();
+		File scrFile=((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		String currentDir=System.getProperty("user.dir");
+		FileUtils.copyFile(scrFile,new File(currentDir + "/srcreenshot/"+ System.currentTimeMillis()+".png"));
 	}*/
 }

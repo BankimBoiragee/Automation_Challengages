@@ -23,7 +23,6 @@ Statement stmt=connection.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE,Result
 	while(rs.next()) {
 		columnvalue.add(rs.getString("salary"));
 		System.out.println(columnvalue);
-			
 	}
 	
 }

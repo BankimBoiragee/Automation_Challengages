@@ -22,19 +22,19 @@ public class SelectRadioButton {
 		driver.get(url);
 		//For option one
 		WebElement option=driver.findElement(By.xpath("//*[@value='radio1']"));
-		/*boolean isSelected=option.isSelected();      //isEnable, isDisplay
+		boolean isSelected=option.isSelected();      //isEnable, isDisplay
 		if(!isSelected) {
 			option.click();
 			System.out.println(option.getText());
 		}
-		*/
+		
 		//For Select all Radiobutton
-		List<WebElement> elements = driver.findElements(By.xpath("//input[@type='radio']"));
+		/*List<WebElement> elements = driver.findElements(By.xpath("//input[@type='radio']"));
 		for(int i=0;i<elements.size();i++) {
 			elements.get(i).click();
 			Thread.sleep(3000);
 			
-		}
+		}*/
 		
 	}
 	//Practice

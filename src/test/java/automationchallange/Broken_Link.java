@@ -16,7 +16,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class Broken_Link {
 	public static void main(String[] args) {
 		//How to find the Broken Link or URL?
-			//System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
     WebDriverManager.chromedriver().setup();
     WebDriver driver = new ChromeDriver();
    driver.manage().window().maximize();
@@ -35,10 +35,8 @@ public class Broken_Link {
 	//first, we have to create an object with the help of URL class.
 	//then pass the URL link inside the parameter.
 	URL url = new URL(link);
-		
 	// then we have to create an instance with the help of HttpURLConnection
 	//after that, with the help of url class object, I can call the openConnection() method.
-				
 	HttpURLConnection httpConnection = (HttpURLConnection)url.openConnection();
     //with the help of httpConnection instance, we can put some Wait there by calling 
 	//setConnectTimeout() method.
